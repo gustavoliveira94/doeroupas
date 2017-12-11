@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+header {
+    width: 100%;
+    height: auto;    
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(220, 20, 60);
+    background-size: cover;
+}
+
+.logo {
+    background-color: black;
+    width: 20%;
+    height: 80px;
+}
+
+nav {
+    padding: 0 10% 0 10%;    
+    width: 80%;
+    height: 100px;
+    background-color: rgb(190, 3, 41);
+    box-shadow: 0 0 0 1px rgb(148, 2, 33);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Muli;
+    color: #ffffff;    
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+.title {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 10% 0 10%;
+    background-color: rgb(220, 20, 60);
+    font-family: Muli;  
+}
+
+.title h1 {
+    color: #ffffff;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.title p {
+    text-align: center;
+    color: #ffffff;
+}
+
+.about {
+    width: 80%;
+    height: 80px;
+    margin: 0 10% 0 10%;
+    background-color:#f1f1f1;
+    box-shadow: 1px -5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Muli;
+    white-space: nowrap;
+}
+
+.about h2 {
+    color: rgb(0, 0, 0);
+}
+
+.inform {
+    height: 280px;
+    font-family: Muli;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.inform p {
+    text-align: center;
+    max-width: 600px;
+    width: 80%;
+    margin: 120px 10% 0 10%;
+}
+
+.orphanage {
+    width: 80%;
+    height: 80px;
+    margin: 0 10% 100px 10%;
+    background-color:#f1f1f1;
+    box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.orphanage h2 {
+    color: rgb(0, 0, 0);
+}
+
+.donate {
+    height: auto;
+    width: 100%;
+    background-color: #dfdfdf;
+    font-family: Muli;    
+}
+
+.box-orphanage {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 10% 0 10%;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 100px 0;
+    padding: 10px;
+    background-color: #dfdfdf;
+    border: 1px solid #c0c0c0;
+}
+
+.help {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 1px -5px 10px 0 rgba(0, 0, 0, 0.2);    
+}
+
+.help h3 {
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #3d3d3d;
+    font-family: Muli;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 0 10px 0;
+}
+
+footer hr {
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+    .inform p {
+    margin: 80px 10% 0 10%;
+    }
+
+    nav li {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    nav li {
+        display: none;
+    }
+
+    .logo {
+        min-width: 100px;
+    }
+}
