@@ -43,6 +43,11 @@ nav li:hover {
     border-bottom: 1px solid #ffffff;
 }
 
+.fixed {
+    position: fixed;
+    background-color: rgba(190, 3, 50, 0.829);    
+}
+
 .title {
     height: 350px;
     display: flex;
@@ -159,24 +164,74 @@ nav li:hover {
 
 footer {
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: #3d3d3d;
     font-family: Muli;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
     padding: 0 0 10px 0;
 }
 
 footer hr {
     width: 70%;
-    margin: 0 15% 0 15%;
+    margin: 0 15% 20px 15%;
+    border: none;
+    border-bottom: 1px solid #292929;     
 }
 
 footer a {
     color: #ffffff;
     text-decoration: none;
 }
+
+.content-footer {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    height: 380px;
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.register {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register h3 {
+    font-size: 30px;
+    white-space: nowrap;    
+}
+
+.register a {
+    margin-top: 20px;
+    width: 280px;
+    height: 80px;
+    background-color: rgb(220, 20, 60);    
+    box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.2);   
+    border: 1px solid #3d3d3d ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+
 
 @media (max-width: 450px) {
     .inform p {
@@ -195,5 +250,16 @@ footer a {
 
     .logo {
         min-width: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .fb {
+        display: none;
+        width: 0;
+    }
+
+    .register {
+        width: 100%;
     }
 }
