@@ -16,12 +16,15 @@ header {
 }
 
 .logo {
-    background-color: black;
-    width: 20%;
+    background-image: url('logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 180px 50px;
+    width: 180px;
     height: 80px;
 }
 
-nav {
+.menu {
     padding: 0 10% 0 10%;    
     width: 80%;
     height: 100px;
@@ -35,11 +38,16 @@ nav {
     color: #ffffff;    
 }
 
-nav li {
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu li {
     list-style: none;
 }
 
-nav li:hover {
+.menu li:hover {
     border-bottom: 1px solid #ffffff;
 }
 
@@ -123,28 +131,70 @@ nav li:hover {
     color: rgb(0, 0, 0);
 }
 
+.states {
+    width: 70%;
+    padding: 0 15% 0 15%;
+    margin-bottom: 50px;
+}
+
+.states select {
+    background-color: #dfdfdf;
+    height: 30px;
+    width: 220px;
+    border: none;
+    font-family: Muli;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+}
+
 .donate {
     height: auto;
     width: 100%;
     background-color: #dfdfdf;
-    font-family: Muli;    
+    font-family: Muli;
 }
 
 .box-orphanage {
-    width: 80%;
+    width: 75%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 0 10% 0 10%;
+    margin: 0 12.5% 0 12.5%;
 }
 
 .box {
     width: 200px;
-    height: 200px;
-    margin: 0 0 100px 0;
+    height: 280px;
+    margin: 0 0 60px 25px;
     padding: 10px;
     background-color: #dfdfdf;
     border: 1px solid #c0c0c0;
+    font-family: Muli;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box p {
+    margin-bottom: 15px;
+}
+
+.box h3 {
+    font-family: Muli;
+    font-size: 20px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.box .address {
+    margin: 0;
+    font-weight: 600;
+}
+
+.box .msg {
+    margin: 0;
+    font-weight: 600;    
 }
 
 .help {
@@ -160,6 +210,22 @@ nav li:hover {
 
 .help h3 {
     margin-bottom: 20px;
+}
+
+.help a {
+    width: 350px;
+    height: 60px;
+    background-color: rgb(220, 20, 60);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Muli;
+    margin-bottom: -45px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 footer {
@@ -231,20 +297,32 @@ footer a {
     color: #ffffff;
 }
 
-
+@media (max-width: 400px) {
+    .box {
+        margin: 0 5% 50px 5%;
+    }
+}
 
 @media (max-width: 450px) {
     .inform p {
     margin: 80px 10% 0 10%;
     }
 
-    nav li {
+    .menu li {
         display: none;
+    }
+
+    .help a {
+        width: 80%;
     }
 }
 
-@media (max-width: 550px) {
-    nav li {
+@media (max-width: 700px) {
+    .menu { 
+        justify-content: center;
+    }
+
+    .menu li {
         display: none;
     }
 
